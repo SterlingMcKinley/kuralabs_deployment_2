@@ -3,6 +3,7 @@ pipeline {
    stages {
     stage ('Build') {
       steps {
+        sh 'echo "2ND ITERATION OF DEPLOYMENT #2"'
         sh '''#!/bin/bash
         python3 -m venv test3
         source test3/bin/activate
@@ -13,6 +14,17 @@ pipeline {
         '''
      }
    }
+    stage('Test') {
+      steps{
+         sh '''#!/bin/bash
+         date
+         whoami
+         echo "NAME WHAT THING YOU LEARNED IN DEPLOYMENT #2...."
+         echo " "
+         cowsay I LEARNED GROOOOOOOVY LOL
+         '''
+      }
+    } 
     stage ('test') {
       steps {
         sh '''#!/bin/bash
