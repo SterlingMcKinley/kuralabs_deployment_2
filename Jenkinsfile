@@ -14,7 +14,7 @@ pipeline {
         '''
      }
    }
-    stage('Test') {
+    stage('Test 1') {
       steps{
          sh '''#!/bin/bash
          date
@@ -24,8 +24,17 @@ pipeline {
          cowsay I LEARNED GROOOOOOOVY LOL
          '''
       }
-    } 
-    stage ('test') {
+    }
+      stage('Test 2') {
+          steps {
+            sh '''#!/bin/bash
+            echo "This is a 2nd test script"
+            echo "Date : `date`"
+            echo "Hostname : `hostname`"
+            '''
+          }
+        }
+    stage ('test 3') {
       steps {
         sh '''#!/bin/bash
         source test3/bin/activate
