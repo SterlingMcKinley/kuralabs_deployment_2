@@ -46,7 +46,11 @@ pipeline {
                     junit 'test-reports/results.xml'
                 }
             }
-            
+           stage ('Deploy') {
+                steps {
+                    sh '/var/lib/jenkins/.local/bin/eb deploy url-shortener-main-dev'
+                }
+            } 
         }
     }
 }
