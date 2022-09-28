@@ -33,7 +33,7 @@ pipeline {
                 '''
             }
         }
-        stage ('test 3') {
+        stage('test 3') {
             steps {
                 sh '''#!/bin/bash
                 source test3/bin/activate
