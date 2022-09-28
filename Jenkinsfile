@@ -20,7 +20,7 @@ pipeline {
          date
          whoami
          echo "NAME WHAT THING YOU LEARNED IN DEPLOYMENT #2...."
-         cowsay I LEARNED GROOOOOOOVY LOL
+         cowsay "I LEARNED GROOOOOOOVY LOL"
          '''
       }
     }
