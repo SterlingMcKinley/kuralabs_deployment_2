@@ -19,8 +19,8 @@ pipeline {
          sh '''#!/bin/bash
          date
          whoami
-         echo "NAME WHAT THING YOU LEARNED IN DEPLOYMENT #2...."
-         cowsay "I LEARNED GROOOOOOOVY LOL"
+         echo "HEY COW, NAME WHAT THING YOU LEARNED IN DEPLOYMENT #2...."
+         echo "I LEARNED GROOOOOOOVY LOL"
          '''
       }
     }
