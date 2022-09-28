@@ -49,7 +49,7 @@ pipeline {
     }
     stage ('Deploy') {
       steps {
-        sh '/var/lib/jenkins/.local/bin/eb deploy url-shortner_main' 
+        sh '/var/lib/jenkins/.local/bin/eb deploy url-shortner-dev' 
       }
     }
   }
